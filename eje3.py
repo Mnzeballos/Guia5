@@ -4,8 +4,10 @@
 #1 sueldo x 0.83
 #2 sueldo x 1.2
 #3 sueldo x 5
-sueldo=
-rango=
+print("¿Cuál es su sueldo?")
+sueldo=int(input())
+print("¿Cuál es su rango?")
+rango=int(input())
 if rango == 1:
     print("El sueldo es:$",sueldo*0.83,"para el rango: 1")
 elif rango == 2:
