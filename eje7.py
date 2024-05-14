@@ -4,13 +4,11 @@ RAM y almacenamiento disponible en la partición montada en “/”.
 '''
 import time
 import os
-#import commands
-#import sys
-#import getop
+
 import psutil
 
 ## Hora
-print("La hora es:", time.strftime("%H:%M:%S", time.localtime()))
+print("\nLa hora es:", time.strftime("%H:%M:%S", time.localtime()))
 
 ## Memoria
 
@@ -27,4 +25,4 @@ print("\n---RAM total:", bytes_to_GB(mem.total), "Gb")
 
 ## Almacenamiento
 alm=psutil.disk_usage(path='/')
-print("Almacenamiento disponible en /",bytes_to_GB(alm.free))
+print("\nAlmacenamiento disponible en '/' es:",bytes_to_GB(alm.free), "Gb")
