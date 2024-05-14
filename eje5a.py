@@ -1,6 +1,6 @@
 import time
 import sys
-print("Primera cuenta hasta:")
+print("Primera cuenta hasta:",sys.argv[1])
 n1=int(sys.argv[1])
 for i in range(1, n1+1):
     print("Cuenta 1:",i)
