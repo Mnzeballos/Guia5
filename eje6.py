@@ -1,3 +1,4 @@
+'''
 # Funciones de la calculadora
 def suma(num1, num2):
     return num1 + num2
@@ -20,4 +21,14 @@ num2=float(input())
 
 # Calculo
 if op=="+":
-    print(f"Resultado:", suma)
+    print(f"Resultado:", suma(num1, num2))
+if op=="-":
+    print(f"Resultado:", resta(num1, num2))
+if op=="*":
+    print(f"Resultado:", multiplicacion(num1, num2))
+if op=="/":
+    print(f"Resultado:", division(num1, num2))
+'''
+#### OPCIÓN 2 CON EVAL
+operacion=input("Introduzca su operación:")
+print(operacion,"=",eval(operacion))
