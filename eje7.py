@@ -13,12 +13,6 @@ import psutil
 print("La hora es:", time.strftime("%H:%M:%S", time.localtime()))
 
 ## Memoria
-#def checkmem():
-#	    result1 = commands.getoutput('free|grep Mem:|tr -s "'" "'" |cut -d "'" "'" -f 2')
-#	    result2 = commands.getoutput('free|grep Mem:|tr -s "'" "'" |cut -d "'" "'" -f 3')
-#	    result3=int(result2)*100/int(result1)
-#	    return result3
-#mem=checkmem()
 
 # Para convertir bytes en Gigabytes
 def bytes_to_GB(bytes):
@@ -28,3 +22,7 @@ def bytes_to_GB(bytes):
 #memoria RAM
 mem= psutil.virtual_memory()
 print("\n---RAM disponible:", bytes_to_GB(mem.available), "Gb")
+print("\n---RAM utilizada:", bytes_to_GB(mem.used), "Gb")
+print("\n---RAM total:", bytes_to_GB(mem.total), "Gb")
+
+## Almacenamiento
