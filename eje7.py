@@ -26,3 +26,5 @@ print("\n---RAM utilizada:", bytes_to_GB(mem.used), "Gb")
 print("\n---RAM total:", bytes_to_GB(mem.total), "Gb")
 
 ## Almacenamiento
+alm=psutil.disk_usage(path='/')
+print("Almacenamiento disponible en /",bytes_to_GB(alm.free))
