@@ -1,7 +1,7 @@
 import time
 import sys
 print("Segunda cuenta hasta:")
-n=int(input())
-for i in range(1, n+1):
-    print(i)
+n2=int(sys.argv[1])
+for i in range(1, n2+1):
+    print("Cuenta 2:",i)
     time.sleep(1)
