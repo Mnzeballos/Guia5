@@ -1,6 +1,6 @@
 import time
 import sys
-print("Contar hasta")
+print("Tercera cuenta hasta")
 n=int(input())
 for i in range(1, n+1):
     print(i)
